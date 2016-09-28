@@ -1,0 +1,93 @@
+section.models
+	padding-top: 100px
+	.head
+		display: inline-block
+		margin-bottom: 70px
+		padding: 25px 40px 25px 50px
+		color: #fff
+		font-size: 24px
+		position: relative
+		&::after
+			content: ' '
+			position: absolute
+			z-index: -1
+			bottom: 0
+			left: 0
+			border-top: 70px solid #e94747
+			border-right: 50px solid transparent
+			height: 0
+			width: 300px
+	.auto
+		.title
+			display: table
+			margin: 0
+			text-align: center
+			margin-bottom: 20px
+			margin-right: 0
+			width: 100%
+			position: relative
+			.brand, .year
+				position: absolute
+				top: 0
+			.brand
+				width: 60px
+				left: 0
+			.model
+				line-height: 50px
+				font-size: 24px
+				text-align: center
+				margin: 0
+			.year
+				right: 0
+				font-size: 13px
+				line-height: 50px
+				padding-right: 0
+				margin-right: 0
+		img
+			width: 100%
+		p
+			padding: 10px 20px 5px
+			text-align: center
+		.buttons
+			width: 100%
+			a
+				color: #fff
+				text-decoration: none
+				outline: none
+				width: 47%
+				padding: 5px 15px
+				text-align: center
+			.test-drive-btn
+				background-color: #e94747
+				float: left
+				&:hover
+					background-color: lighten(#e94747, 5%)
+			.more-btn
+				background-color: #00b7f4
+				float: right
+				&:hover
+					background-color: lighten(#00b7f4, 5%)
+@media only screen and (max-width : $sm)
+	section.models
+		.auto
+			.buttons
+				a
+					float: none
+					width: 100%
+					padding: 10px
+					margin: 5px 0
+@media only screen and (max-width : $xs)
+	section.models
+		padding-top: 50px
+		.head
+			margin-bottom: 30px
+		.auto
+			margin-bottom: 10px
+			.title
+				margin-bottom: 5px
+				.model
+					font-size: 20px
+			p
+				padding: 5px
+				margin-bottom: 5px
+				font-size: 14px

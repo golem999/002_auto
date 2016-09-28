@@ -1,0 +1,67 @@
+footer
+	overflow: hidden
+	margin-top: 50px
+	.shadow
+		+size(100%)
+		background-color: #000
+		opacity: 0.4
+		position: absolute
+	.wrap
+		height: 450px
+		background-image: url(../images/footer/bg.jpg)
+		background-size: cover
+		background-position: center center
+		position: relative
+		.menu-item
+			border-right: 2px solid #fff
+			padding: 0
+			&.last
+				border-right: none
+			a
+				color: #fff
+				display: block
+				padding: 15px 5px
+				text-align: center
+				&:hover
+					background-color: rgba(255,255,255, 0.15)
+					
+		.feedback
+			background-color: rgba(54,51,51, 0.8)
+			border-radius: 5px
+			margin-top: 10px
+			h2
+				color: #fff
+				text-align: center
+				font-size: 20px
+			input[type=text], textarea
+				width: 100%
+				background-color: transparent
+				border: 2px solid #fff
+				margin: 5px 0
+				padding: 5px 10px
+				color: #fff
+			textarea
+				min-width: 100%
+				max-width: 100%
+				max-height: 200px
+			input[type=submit]
+				width: 100%
+				padding: 5px
+				margin-top: 10px
+				background-color: #fff
+				border: none
+				font-size: 16px
+				&:hover
+					background-color: darken(#fff, 5%)
+@media only screen and (max-width : $sm)
+	footer
+		.wrap
+			height: 550px
+			.feedback
+				margin-top: 50px
+				textarea
+					min-height: 100px
+				input[type=submit]
+					padding: 10px
+				input[type=text]
+					padding: 7px 15px

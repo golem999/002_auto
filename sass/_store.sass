@@ -1,0 +1,85 @@
+section.store
+	margin-top: 100px
+	overflow: hidden
+	.head
+		display: inline-block
+		margin-bottom: 70px
+		padding: 25px 40px 25px 50px
+		color: #fff
+		font-size: 24px
+		position: relative
+		&::after
+			content: ' '
+			position: absolute
+			z-index: -1
+			bottom: 0
+			left: 0
+			border-top: 70px solid #e94747
+			border-right: 50px solid transparent
+			height: 0
+			width: 300px
+	.item
+		margin-bottom: 50px
+		.image-wrap
+			height: 160px
+			align: bottom
+			img
+				width: auto
+				max-height: 150px
+				display: inline
+		h3
+			font-size: 18
+			text-decoration: underline
+			color: #000
+			height: 58px
+			overflow: hidden
+		.size
+			border-color: #e94747
+			width: 70px
+			padding: 3px 5px
+			cursor: pointer
+			font-size: 18px
+			line-height: 40px
+		.price
+			line-height: 40px
+			font-size: 16px
+			margin-right: 10%
+			float: right
+		.add-to-card
+			clear: both
+			display: block
+			color: #000
+			border: 2px solid #e94747
+			margin-top: 5px
+			padding: 7px
+			text-align: center
+			text-decoration: none
+			font-size: 16px
+			&:hover
+				background-color: #e94747
+				color: #fff
+	.btn-more
+		display: block
+		text-align: center
+		font-size: 24px
+		color: #e94747
+		padding: 10px 0
+		width: 100%
+		border: 2px solid #e94747
+		&:hover
+			background-color: #e94747
+			color: #fff
+		&:hover, &:active, &:focus
+			text-decoration: none
+@media only screen and (max-width : $xs + 30)
+	section.store
+		.head
+			margin-bottom: 20px
+		.item
+			width: 80%
+			float: none
+			margin: 30px auto
+			h3
+				height: auto
+				margin-top: 5px
+
