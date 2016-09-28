@@ -3,11 +3,11 @@
 /* var mySwiper = new Swiper ('.swiper-container', {
       pagination: 'swiper-pagination'
   })    */
-
+/*
 $(function() {
     $(".rslides").responsiveSlides();
   });
-
+*/
 
 $(document).ready(function() {
  
@@ -16,7 +16,7 @@ $(document).ready(function() {
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem : true,
-      mouseDrag : false,
+      mouseDrag : false
   
       // "singleItem:true" is a shortcut for:
       // items : 1, 

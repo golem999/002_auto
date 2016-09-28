@@ -1,7 +1,7 @@
 {
-  "name": "ocean-tour",
+  "name": "Auto",
   "version": "1.0.0",
-  "description": "First Gulp Project",
+  "description": "Gulp Project",
   "devDependencies": {
     "browser-sync": "^2.11.0",
     "gulp": "^3.9.0",
